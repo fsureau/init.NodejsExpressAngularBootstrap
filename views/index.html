@@ -1,1 +1,23 @@
-index
+<html ng-app="mainModule">
+
+<head>
+	<title>Application</title>
+</head>
+
+<body ng-controller="defaultController as data">
+	<input ng-model="defaultModel"> {{ defaultModel }}
+
+	<ul>
+		<li ng-repeat="element in data.elements">
+            <span>{{element.text}}</span>
+          </label>
+		</li>
+	</ul>
+
+	<!-- Javascripts loading -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+	<script src="js/angularApp.js"></script>
+
+</body>
+
+</html>

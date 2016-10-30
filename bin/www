@@ -8,12 +8,14 @@ var app = require('../app');
 var debug = require('debug')('app:server');
 var http = require('http');
 
+var portNumber = 8080;
+
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '8080');
-app.set('port', port);
+var port = normalizePort(process.env.PORT || portNumber);
+app.set('port', portNumber);
 
 /**
  * Create HTTP server.
