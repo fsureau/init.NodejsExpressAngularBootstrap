@@ -1,4 +1,7 @@
 ## Commands
-npm install // install dependencies
-npm start // start the application
-
+```
+// install dependencies
+npm install
+// start the application
+npm start 
+```
